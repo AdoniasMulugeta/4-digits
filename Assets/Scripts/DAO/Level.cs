@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level : MonoBehaviour {
-	public int digitsSize;
+[System.Serializable]
+public class Level {
+	public int digitLength;
 	public int maxTries;
+    public DigitType type;
 
-	struct digitsType{
-		static string NUMBER = "Number";
-		static string ALPHABET = "Alphabet";
+	public enum DigitType{
+	    NUMBER,NUMBER_AND_ALPHABET
 	}
-
 }

@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Guess : MonoBehaviour {
+[System.Serializable]
+public class Guess {
     public string value;
     public int correctValue = 0;
     public int correctPosition = 0;

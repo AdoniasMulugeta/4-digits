@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GuessScorer : MonoBehaviour {
+public class GuessScorer : Singleton <GuessScorer>{
 
-    public static Guess ScoreGuess(Guess guessedValue) {
+    public Guess ScoreGuess(Guess guessedValue) {
         List<string> correct = new List<string>();
         correct.Add("1");
         correct.Add("2");
